@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body id="layout">
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1 class="center">Travel Gallery</h1>
+            </div>
+            <div class="links">
+                <div class="links"><a href="wishlist.html">Home</a></div>
+                <div class="links"><a href="Gallery.html">Gallery</a></div>
+                <div class="links"><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <h2 class="center">Explore the World</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/austria.jpg" alt="Austria" />
+                    <h3>Austria</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bahrain.jpg" alt="Bahrain" />
+                    <h3>Bahrain</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/canada.jpg" alt="Canada" />
+                    <h3>Canada</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/china.jpg" alt="China" />
+                    <h3>China</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ethiopia.jpg" alt="Ethiopia" />
+                    <h3>Ethiopia</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/germany.jpg" alt="Germany" />
+                    <h3>Germany</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/saudi arabia.jpg" alt="Saudi Arabia" />
+                    <h3>Saudi Arabia</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/united kingdom.jpg" alt="United Kingdom" />
+                    <h3>United Kingdom</h3>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dominican republic.jpg" alt="Dominican Republic" />
+                    <h3>Dominican Republic</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <script>document.write(new Date().getFullYear())</script> Travel Wishlist
+        </p>
+    </footer>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            padding: 10px;
+        }
+        .nav-container .links {
+            display: flex;
+        }
+        .nav-container .links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        h2.center {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>
